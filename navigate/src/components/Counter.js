@@ -2,6 +2,7 @@ import {useState} from 'react'
 
 import Individual from "./Individual"
 import Total from "./Total"
+import Back from "./Back"
 
 
 function Counter() {
@@ -27,6 +28,8 @@ function Counter() {
 
 
     <div>
+
+        <Back/>
 
         <h1>
         COUNTER!
