@@ -1,8 +1,12 @@
-import React from 'react'
-
 function About() {
   return (
-    <div>about</div>
+    <div>
+      
+      <h1>
+        NAVIGATOR INITIALIZER
+      </h1>
+
+    </div>
   )
 }
 
