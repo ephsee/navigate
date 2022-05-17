@@ -1,4 +1,12 @@
-function Individual({count, setTotal, upCount, downCount}) {
+function Individual({count, setCount, setTotal}) {
+
+  function upCount(){
+      setCount(count + 1)
+  }
+
+  function downCount(){
+      setCount(count - 1)
+  }
 
   return (
     <div>

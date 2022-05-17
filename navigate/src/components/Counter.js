@@ -4,20 +4,10 @@ import Individual from "./Individual"
 import Total from "./Total"
 import Back from "./Back"
 
-
 function Counter() {
 
     const [total, setTotal] = useState(0)
-
     const [count, setCount] = useState(0)
-
-    function upCount(){
-        setCount(count + 1)
-    }
-
-    function downCount(){
-        setCount(count - 1)
-    }
 
     const totalCount = (count) => {
         setTotal(count + total)
@@ -25,7 +15,6 @@ function Counter() {
     }
 
   return (
-
 
     <div>
 
@@ -37,11 +26,9 @@ function Counter() {
 
         <Total total={total} />
 
-        <Individual count={count} setTotal={totalCount} upCount={upCount} downCount={downCount} />
-
+        <Individual setTotal={totalCount} count={count} setCount={setCount}/>
 
     </div>
-  
   
     )
 }

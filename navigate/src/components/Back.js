@@ -8,10 +8,13 @@ function Back() {
     }
 
   return (
-    <div onClick={goBack}>
-
-        BACK
-
+    <div>
+      <div>
+        <span onClick={goBack}>BACK</span>
+      </div>
+      <div>
+        <Link to="/">LINK BACK</Link>
+      </div>
     </div>
   )
 }

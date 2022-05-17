@@ -1,8 +1,9 @@
-import {useEffect, useState} from 'react'
+import {useState, useEffect} from 'react'
 
 function About() {
 
-  const [data, setData] = useState([])
+  const [data, setData] = useState({})
+  const [allData, setAllData] = useState([])
 
   function fetchNext1(){
     fetch('https://swapi.dev/api/people/1')
@@ -22,24 +23,14 @@ function About() {
     .then(setData)
   }
 
-//   function fetchNext2(){
-//     fetch('https://swapi.dev/api/people?page=2')
-//     .then(r=>r.json())
-//     .then(setData)
-//     console.log("PAGE 2")
-//   }
+  useEffect(()=>{
+    fetch('https://swapi.dev/api/people')
+    .then(r=>r.json())
+    .then(setAllData)
+  }, [])
 
-//   function fetchNext3(){
-//     fetch('https://swapi.dev/api/people?page=3')
-//     .then(r=>r.json())
-//     .then(setData)
-//     console.log("PAGE 3")
-// }
-
-  console.log(data)
-
-  // const showData = data.results.map(a => a)
-  // console.log(showData)
+  console.log('data', data)
+  console.log('alldata', allData.results)
 
   return (
     <div>
