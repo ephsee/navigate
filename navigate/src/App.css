@@ -1,0 +1,14 @@
+.TTT {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px)
+}
+
+.T {
+    border: 1px solid;
+    border-color: black;
+}
+.STbutton {
+    padding: 10px
+}

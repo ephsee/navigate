@@ -16,6 +16,11 @@ function New() {
                 COUNTER
             </NavLink>
             </div>
+            <div>
+            <NavLink to = '/tictactoe'>
+                TICTACTOE
+            </NavLink>
+            </div>
             
     </div>
   )
