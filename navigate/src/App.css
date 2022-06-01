@@ -6,8 +6,13 @@
 }
 
 .T {
+    display: flex;
     border: 1px solid;
     border-color: black;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
 }
 .STbutton {
     padding: 10px

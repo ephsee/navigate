@@ -77,13 +77,14 @@ const TicTacToe = () => {
   return (
     <div>
         <Back/> 
-        <div className="STbutton"> TicTacToe </div>
-        {/* <button className="STbutton" onClick={gameX}>Click to Start</button> */}
-        <button className="STbutton" onClick={gameX}>Exes</button>
-        <button className="STbutton" onClick={gameO}>Ohs</button>
+        <h1> TicTacToe </h1>
+        <div><button className="STbutton" onClick={gameX}>Click to Start</button></div>
+        <button className="STbutton" onClick={gameX}>Select Player 1 = Exes</button>
+        <button className="STbutton" onClick={gameO}>Select Player 2 = Ohs</button>
 
-        {activePlayer === '' ? null : <span>{activePlayer}'s turn</span>}
-        
+        <div className='STbutton'>
+            {activePlayer === '' ? null : <span>{activePlayer}'s turn</span>}
+        </div>
 
         <div className="TTT STbutton">
             <div className="T" onClick={selectBlock1}>{block1}</div>
