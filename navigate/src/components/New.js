@@ -21,6 +21,11 @@ function New() {
                 TICTACTOE
             </NavLink>
             </div>
+            <div>
+            <NavLink to = '/searcher'>
+                SEARCHER
+            </NavLink>
+            </div>
             
     </div>
   )
